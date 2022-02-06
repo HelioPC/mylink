@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { FiLink } from 'react-icons/fi';
 import Menu from '../../components/Menu';
 import LinkItem from '../../components/LinkItem';
-import api from '../../services/api'
+import api from '../../services/api';
+import { saveLink } from '../../services/storeLinks';
 import './Home.css';
 
 export default function Home(){
@@ -18,6 +19,10 @@ export default function Home(){
 
             setData(response.data);
             setShow(true);
+
+            saveLink('@encurtaLink', response.data);
+
+            setLink('');
         }catch{
             alert("Digite uma url válida");
             setLink('');
