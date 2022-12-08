@@ -33,7 +33,7 @@ export default function Home(){
     return(
         <div className="container-home">
             <div className="logo">
-                <img src="/logo192.png" alt="react logo" />
+                <img src="/mylink/logo192.png" alt="react logo" />
                 <h1>My Links</h1>
                 <span>Cole seu link para encurtar 👇</span>
             </div>
