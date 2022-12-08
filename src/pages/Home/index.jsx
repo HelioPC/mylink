@@ -23,7 +23,8 @@ export default function Home(){
             saveLink('@encurtaLink', response.data);
 
             setLink('');
-        }catch{
+        }catch (error) {
+            console.log(error)
             alert("Digite uma url válida");
             setLink('');
         }

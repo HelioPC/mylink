@@ -1,9 +1,9 @@
 import axios from "axios";
 
-export const key = "9b0c57a43be19c31d18974bd5616bf157fe8b884";
+export const key = import.meta.env.VITE_REACT_APP_API_KEY
 
 const api = axios.create({
-    baseURL: 'https://api-ssl.bitly.com/v4',
+    baseURL: import.meta.env.VITE_REACT_APP_API_BASE_URL,
     headers:{
         'Authorization': `Bearer ${key}`
     }
