@@ -6,7 +6,7 @@ import Error from "./pages/Error";
 
 export default function RoutesApp(){
     return(
-        <BrowserRouter>
+        <BrowserRouter basename="/mylink">
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/links" element={<Links />} />
